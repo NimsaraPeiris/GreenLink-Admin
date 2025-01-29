@@ -12,6 +12,10 @@ const mockData = [
   { name: 'May', value: 500 }
 ];
 
+import { LatLngTuple } from 'leaflet';
+
+const position: LatLngTuple = [51.505, -0.09];
+
 function Dashboard() {
   // TODO: Fetch data using React Query
   const [stats] = useState({
@@ -50,16 +54,18 @@ function Dashboard() {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white p-4 rounded-lg shadow mb-6">
-          <h2 className="text-lg font-semibold mb-4">Container Locations</h2>
-          <MapContainer center={[7.8731, 80.7718]} zoom={8}>
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            {/* TODO: Add real container markers */}
-          </MapContainer>
-        </div>
+        <div className="bg-white rounded-lg shadow mb-8">
+            <div className="p-4 border-b">
+              <h3 className="text-lg font-semibold">Container Locations</h3>
+            </div>
+            {/* <MapContainer center={position} zoom={8}>
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              <Marker position={position} />
+            </MapContainer> */}
+          </div>
 
         {/* Alerts Section */}
         <div className="bg-white p-4 rounded-lg shadow mb-6">
