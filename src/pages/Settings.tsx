@@ -4,7 +4,7 @@ function Settings() {
   return (
     <>
       <Helmet>
-        <title>Settings | GreenLink</title>
+        <title>Settings - GreenLink</title>
       </Helmet>
       <div className="p-6">
         <h1 className="text-2xl font-bold mb-6">Settings</h1>

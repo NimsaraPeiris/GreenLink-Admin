@@ -28,7 +28,7 @@ function Dashboard() {
   return (
     <>
       <Helmet>
-        <title>Dashboard | GreenLink</title>
+        <title>Dashboard - GreenLink</title>
       </Helmet>
       <div className="p-6">
         <h1 className="text-2xl font-bold mb-6">Dashboard Overview</h1>

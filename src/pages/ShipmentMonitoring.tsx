@@ -4,7 +4,7 @@ function ShipmentMonitoring() {
   return (
     <>
       <Helmet>
-        <title>Shipment Monitoring | GreenLink</title>
+        <title>Shipment Monitoring - GreenLink</title>
       </Helmet>
       <div className="p-6">
         <h1 className="text-2xl font-bold mb-6">Shipment Monitoring</h1>

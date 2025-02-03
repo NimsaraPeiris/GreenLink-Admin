@@ -4,7 +4,7 @@ function BlockchainLogs() {
   return (
     <>
       <Helmet>
-        <title>Blockchain Logs | GreenLink</title>
+        <title>Blockchain Logs - GreenLink</title>
       </Helmet>
       <div className="p-6">
         <h1 className="text-2xl font-bold mb-6">Blockchain Logs</h1>
